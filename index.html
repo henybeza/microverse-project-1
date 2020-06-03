@@ -6,12 +6,12 @@
 
   <body>
     <script>
-      myGame = () => {
+      game = () => {
         let playerScore = 0
         let computerScore = 0
 
         completeRound = () => {
-          function computerPlay() {
+          computerPlay = () => {
             let computerRandom = Math.floor(Math.random() * Math.floor(3))
             let computerHand
             switch (computerRandom) {
@@ -117,7 +117,7 @@
         winner()
       }
 
-      myGame()
+      game()
     </script>
   </body>
 </html>
